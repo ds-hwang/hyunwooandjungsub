@@ -346,21 +346,11 @@ a:focus {
     transition-delay:         0.25s;
 }
 
-/*
-    ... and 'scaling' to scale down after another quarter of a second.
-*/
-#ing.present .scaling {
-    -webkit-transform: scale(0.7);
-    -moz-transform:    scale(0.7);
-    -ms-transform:     scale(0.7);
-    -o-transform:      scale(0.7);
-    transform:         scale(0.7);
+.image {
+}
 
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
+.mobileimage {
+    width: 700px;
 }
 
 /*

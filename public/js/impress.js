@@ -184,6 +184,15 @@
         body.classList.add("impress-supported");
     }
 
+    // force images small on mobile
+    var mobile = (ua.search(/(iphone)|(ipod)|(android)/) != -1);
+    if (mobile) {
+        var images = document.getElementsByClassName("image");
+        for (var i = 0; i < images.length; i++) {
+            images[i].className = images[i].className + ' mobileimage';
+        }
+    }
+
     // GLOBALS AND DEFAULTS
 
     // This is were the root elements of all impress.js instances will be kept.
